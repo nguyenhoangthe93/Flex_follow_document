@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <style>
+      .container {
+        display: flex;
+        border: 1px solid;
+        /* mặc định không có flex-direction thì sẽ là flex-direction: row */
+        /* sắp xếp theo chiều ngang với thứ tự ngược lại thì là flex-direction: row-reverse */
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* sắp xếp theo chiều dọc, flex-direction: column */
+        height: 500px;
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: wrap; */
+        /* overflow: auto; */
+
+        /* flex-flow: row wrap =  flex-direction: row;  flex-wrap: nowrap; */
+        justify-content: space-evenly;
+        width: 500px;
+
+        /* canh chỉ align item  */
+        /* align-items: baseline; */
+        align-content: space-around;
+      }
+      .item {
+        min-width: 50px;
+        width: 70px;
+        height: 50px;
+        border: 1px solid;
+      }
+      .item3 {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.container>div.item{item $}*6 -->
+    <div class="container">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item item3">item 3</div>
+      <div class="item">item 4</div>
+      <div class="item">item 5</div>
+      <div class="item">item 6</div>
+    </div>
+  </body>
+</html>
